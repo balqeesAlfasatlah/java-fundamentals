@@ -55,8 +55,6 @@ public static void flipNHeads(int n){
          DateTimeFormatter format = DateTimeFormatter.ofPattern("HH:mm:ss");  
          String formatDateTime = datetime1.format(format);   
          System.out.println(formatDateTime);
-            
-
     
     }
     
@@ -65,10 +63,9 @@ public static void flipNHeads(int n){
          System.out.println(Pluralize(1,"cat"));
          System.out.println(Pluralize(3,"dog"));
          flipNHeads(5);  
-	  clock();
+	     clock();
 
-
-}
+   }
 }
 
 
