@@ -3,8 +3,67 @@
  */
 package basiclibrary;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class Library {
-    public boolean someLibraryMethod() {
-        return true;
+
+    static int[] roll(int n){
+        int array[] = new int[n];
+        int dicearr[] = {1,2,3,4,5,6};
+        Random random = new Random();
+        for(int i=0; i<n; i++){
+            int randomNum = random.nextInt(5);
+            array[i] = dicearr[randomNum];
+        }
+        return array;
+    }
+
+
+    static boolean containsDuplicates(int arr[] ) {
+        Arrays.sort(arr);
+        for (int i =1; i<arr.length ; ++i ){
+            if(arr[i] == arr[i-1]){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    static int calAverages(int arr[] ) {
+        int sum =0;
+        for (int i =0; i<arr.length ;i++ ){
+            sum += arr[i];
+        }
+        return sum/arr.length;
+    }
+
+
+    static  int[] lowestAverage(int[][] arr){
+        int sum = 0;
+        float previousAvg;
+        float newAvg = 0;
+        int index = 0;
+
+        for(int i = 0; i<arr.length; i++){
+            previousAvg = newAvg;
+            sum = 0;
+
+            for (int j = 0; j < arr[i].length; j++){
+                sum = sum + arr[i][j];
+            }
+
+            newAvg = (float)  sum / arr[i].length;
+            if(newAvg < previousAvg){
+                index = i;
+            }
+        }
+        return arr[index];
+    }
+// end the functions
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(roll(10)));
     }
 }

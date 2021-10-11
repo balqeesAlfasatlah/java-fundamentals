@@ -7,8 +7,33 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
+
+    Library testing = new Library();
     @Test void someLibraryMethodReturnsTrue() {
         Library classUnderTest = new Library();
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
+    }
+
+    @Test public void testRoll(){
+        int rollsnum = 3;
+        assertEquals(rollsnum , testing.roll(rollsnum).length);
+
+    }
+
+    @Test public void testDuplicated(){
+        assertTrue(testing.containsDuplicates(new int[] {1,4,2,5,7,2}));
+
+    }
+
+    @Test public void testAvg(){
+
+        assertEquals(4 , testing.calAverages(new int[] {2,4,3,7}));
+
+    }
+
+    @Test public void testLowestAvg(){
+
+        assertArrayEquals(new int [] {1,4,2} , testing.lowestAverage(new int[][] { {1,4,2} , {2,1,5} }));
+
     }
 }
