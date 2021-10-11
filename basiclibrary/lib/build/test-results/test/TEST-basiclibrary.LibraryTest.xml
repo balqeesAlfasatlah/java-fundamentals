@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="basiclibrary.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-11T18:24:58" hostname="LTUCSTUDENT-L129" time="0.056">
+<testsuite name="basiclibrary.LibraryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-10-11T23:22:21" hostname="LTUCSTUDENT-L129" time="0.253">
   <properties/>
-  <testcase name="someLibraryMethodReturnsTrue()" classname="basiclibrary.LibraryTest" time="0.056"/>
+  <testcase name="testDuplicated()" classname="basiclibrary.LibraryTest" time="0.234"/>
+  <testcase name="testAvg()" classname="basiclibrary.LibraryTest" time="0.008"/>
+  <testcase name="testRoll()" classname="basiclibrary.LibraryTest" time="0.001"/>
+  <testcase name="testLowestAvg()" classname="basiclibrary.LibraryTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
