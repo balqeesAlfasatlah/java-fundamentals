@@ -9,10 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class LibraryTest {
 
     Library testing = new Library();
-    @Test void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
-    }
+   
 
     @Test public void testRoll(){
         int rollsnum = 3;
