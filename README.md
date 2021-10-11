@@ -1,6 +1,13 @@
 # java-fundamentals
 
-## I used these methods in this lab :
+## I used these methods in this lab 1 :
 
 + Math.random() : to get a random number between 0 and 1.
 + Thread.sleep() : to to stop the execution of the current thread for a specific duration (1 second) of the time and after that time duration gets over, the thread which is executing earlier starts to execute again.
+
+## I used these methods & things in to solve lab 2:
+
++ random() : to get a random number between 1 and 6.
++ sort(): to sort the array in asending order.
++ as well as loops and arrays and if statements.
++ then I test it using the terminl to make sure everything working fine.
