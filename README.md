@@ -11,3 +11,10 @@
 + sort(): to sort the array in asending order.
 + as well as loops and arrays and if statements.
 + then I test it using the terminl to make sure everything working fine.
+
+## I used these methods & things in to solve lab 3:
+
++ Hashset : I used Hashset in the first problem and the second .
++ Hashmap : I used Hashmap in the second problem.
++ to read from file : I used method two form the reading file methods.  
++ then I test it in the test file to make sure everything working fine.
