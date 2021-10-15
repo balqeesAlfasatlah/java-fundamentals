@@ -62,7 +62,7 @@ class AppTest {
     }
 
     @Test void  testFewError(){
-        String fewErrors = "";
+        String fewErrors = "Line7Missing semicolon" + "Line12Missing semicolon" + "Line13Missing semicolon";
         Path fewErrorsFile = Paths.get("./src/test/resources/fewErrorsFile.js");
         assertEquals(fewErrors, Linter(fewErrorsFile));
     }
