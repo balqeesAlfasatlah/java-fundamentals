@@ -25,6 +25,7 @@ public static void flipNHeads(int n){
             double randomNum = Math.random();
             if (randomNum < 0.5) {
                 System.out.println("Tail");
+                headNum = 0;
                 flipsNum++;
             }
             if (randomNum >=0.5) {
@@ -62,7 +63,7 @@ public static void flipNHeads(int n){
 	public static void main(String[] args) {
          System.out.println(Pluralize(1,"cat"));
          System.out.println(Pluralize(3,"dog"));
-         flipNHeads(5);  
+         flipNHeads(5);
 	     clock();
 
    }
