@@ -18,3 +18,4 @@
 + Hashmap : I used Hashmap in the second problem.
 + to read from file : I used method two form the reading file methods.
 + then I test it in the test file to make sure everything working fine.
+
