@@ -19,3 +19,12 @@
 + to read from file : I used method two form the reading file methods.
 + then I test it in the test file to make sure everything working fine.
 
+## I used these methods & things in to solve lab 6:
+
++ classes : Restarunt , Review , Library
+
++ fields :
+   + Restarunt (name , stars , priceCategory).
+   + Review (author , body , starsNum).
+
++ methods : Review , toString ,Getter , updateStars
