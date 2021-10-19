@@ -17,10 +17,7 @@ class LibraryTest {
       assertEquals("Restaurant name: Firefly  Rates : 3.0 price category: 4.0$", restaurant.toString());
     }
 
-    @Test void RestaurantReview(){
-        Review review = new Review("very good","Balqees",5);
-        assertEquals("Author :  Balqees, rates :  5, notes: very good", review.toString());
-    }
+    
 
     @Test void Reviews(){
         Restaurant restaurant = new Restaurant("Firefly" ,3,4);
@@ -33,6 +30,98 @@ class LibraryTest {
         restaurant.addReviews(secondReview);
         restaurant.addReviews(thirdReview);
 
-        assertEquals("[Author :  Balqees, rates :  5, notes:  very good, Author :  jack, rates :  4, notes: good, Author :  Tamer, rates :  2, notes: bad]",restaurant.getReviews().toString());
+        assertEquals("[\nAuthor: Balqees\n" +
+                " rates: 5\n" +
+                " notes:  very good\n" +
+                ", \n" +
+                "Author: jack\n" +
+                " rates: 4\n" +
+                " notes: good\n" +
+                ", \n" +
+                "Author: Tamer\n" +
+                " rates: 2\n" +
+                " notes: bad\n" +
+                "]",restaurant.getReviews().toString());
+    }
+
+
+    @Test void shopReviews(){
+        Shop shop = new Shop("\njewellery shop" ,4,5," theres a collections of necklace , rings , Earring and more! ");
+
+
+        Review review4 = new Review(" nice","Rami",4);
+        Review review5 = new Review("amazing","Farah",5);
+        Review review6 = new Review("not as i expected","Lara",2);
+
+        shop.addReviews(review4);
+        shop.addReviews(review5);
+        shop.addReviews(review6);
+
+        assertEquals("\nShop name: \njewellery shop\n" +
+                " Rates : 3.6666667\n" +
+                "price category: 5.0$\n" +
+                " description theres a collections of necklace , rings , Earring and more! \n" +
+                " Review : [\n" +
+                "Author: Rami\n" +
+                " rates: 4\n" +
+                " notes:  nice\n" +
+                ", \n" +
+                "Author: Farah\n" +
+                " rates: 5\n" +
+                " notes: amazing\n" +
+                ", \n" +
+                "Author: Lara\n" +
+                " rates: 2\n" +
+                " notes: not as i expected\n" +
+                "]\n", shop.toString());
+
+    }
+
+    @Test void TheaterReviews(){
+        Theater theater = new Theater("city mall cinema" ,4,3);
+
+        Review review7 = new Review("I like the movie","Ahmad",5);
+        Review review8 = new Review("amazing","Ali",5);
+        Review review9 = new Review("its bad","Lama",1);
+
+        theater.addReviews(review7);
+        theater.addReviews(review8);
+        theater.addReviews(review9);
+
+        assertEquals("\nTheater name : city mall cinema\n" +
+                " ,Rates : 3.6666667\n" +
+                "Movies for today : []\n" +
+                " Review :[\n" +
+                "Author: Ahmad\n" +
+                " rates: 5\n" +
+                " notes: I like the movie\n" +
+                ", \n" +
+                "Author: Ali\n" +
+                " rates: 5\n" +
+                " notes: amazing\n" +
+                ", \n" +
+                "Author: Lama\n" +
+                " rates: 1\n" +
+                " notes: its bad\n" +
+                "]\n", theater.toString());
+
+    }
+
+    @Test void  AddAndRemoveMovies(){
+        Theater theater = new Theater("city mall cinema" ,4,3);
+
+
+        theater.addMovie("500 days of summer");
+        theater.addMovie("Shutter island");
+        theater.addMovie("The gone girl");
+        theater.addMovie("The invisible guest");
+        theater.addMovie("Run");
+        theater.addMovie("Exam");
+        theater.removeMovie("The gone girl");
+        theater.removeMovie("Exam");
+
+       assertEquals("\nTheater name : city mall cinema\n" +
+               " ,Rates : 4.0\n"+
+               "Movies for today : [500 days of summer, Shutter island, The invisible guest, Run]\n" + " Review :[]" + "\n",theater.toString());
     }
 }

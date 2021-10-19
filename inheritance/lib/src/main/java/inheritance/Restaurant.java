@@ -11,7 +11,7 @@ public class Restaurant extends Places{
 
 
     public String toString(){
-        return "\nRestaurant name: " +  getName() + "\n " + " Rates : " + getStars() + "\n" + "price category: " + getPriceCategory() + "$" + "\n";
+        return "Restaurant name: " +  getName() + " " + " Rates : " + getStars() + " " + "price category: " + getPriceCategory() + "$" ;
     }
 
 
