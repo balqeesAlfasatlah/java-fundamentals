@@ -17,7 +17,7 @@ class LibraryTest {
       assertEquals("Restaurant name: Firefly  Rates : 3.0 price category: 4.0$", restaurant.toString());
     }
 
-    
+
 
     @Test void Reviews(){
         Restaurant restaurant = new Restaurant("Firefly" ,3,4);
