@@ -28,3 +28,21 @@
    + Review (author , body , starsNum).
 
 + methods : Review , toString ,Getter , updateStars
+
+## I used these methods & things in to solve lab 7:
+
++ parent Classes : Places , Review , 
+
++ sub Classes : Restaurant , Shop , Theater , ReviewMovie
+
++ fields :
+   + Places (name , stars , priceCategory).
+   + Review (author , body , starsNum).
+   + Restaurant(inherts everything from Places )
+   + Shop (inherts everything from Places , description).
+   + Theater(inherts everything from Places , arraylist for movies)
+   + ReviewMovie (inherts everything from Review , movie)
+
++ methods : 
+
+    Review , addReview , addMovie , removeMovie ,toString ,Getter ,setter , updateStars

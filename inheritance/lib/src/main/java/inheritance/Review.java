@@ -20,12 +20,34 @@ public class Review {
 
     }
 
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
     public int getStarsNum(){
         return starsNum;
     }
 
+    public void setStarsNum(int starsNum) {
+        this.starsNum = starsNum;
+    }
+
+
     public String toString(){
-        return "Author : " + " " + author +  "," + " rates : " + " " + starsNum + "," + " notes: " + body;
+        return "\nAuthor: " + author + "\n" + " rates: " + starsNum + "\n" + " notes: " + body + "\n";
     }
 }
 

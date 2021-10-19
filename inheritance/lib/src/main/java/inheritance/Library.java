@@ -10,6 +10,8 @@ public class Library {
 
 
     public static void main(String[] args) {
+
+        // restaurant test
         Restaurant restaurant = new Restaurant("Firefly" , 3,4);
         
         Review firstReview = new Review(" very good","Balqees",5);
@@ -26,7 +28,48 @@ public class Library {
         System.out.println(restaurant);
 
 
+        // shops test
+        Shop shop = new Shop("jewellery shop" ,4,5," theres a collections of necklace , rings , Earring and more! ");
 
+
+        Review review4 = new Review(" nice","Rami",4);
+        Review review5 = new Review("amazing","Farah",5);
+        Review review6 = new Review("not as i expected","Lara",2);
+
+        shop.addReviews(review4);
+        shop.addReviews(review5);
+        shop.addReviews(review6);
+
+
+
+        System.out.println(shop);
+
+        // theater & movies  test
+
+        Theater theater = new Theater("city mall cinema" ,4,3);
+
+
+        theater.addMovie("500 days of summer");
+        theater.addMovie("Shutter island");
+        theater.addMovie("The gone girl");
+        theater.addMovie("The invisible guest");
+        theater.addMovie("Run");
+        theater.addMovie("Exam");
+        theater.removeMovie("The gone girl");
+        theater.removeMovie("Exam");
+
+        Review review7 = new Review("I like the movie","Ahmad",5);
+        Review review8 = new Review("amazing","Ali",5);
+        Review review9 = new Review("its bad","Lama",1);
+
+        theater.addReviews(review7);
+        theater.addReviews(review8);
+        theater.addReviews(review9);
+
+
+
+        System.out.println(theater.getMovies());
+        System.out.println(theater);
 
 
 
